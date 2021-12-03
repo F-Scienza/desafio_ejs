@@ -1,0 +1,28 @@
+{
+  "name": "desafioejs",
+  "version": "1.0.0",
+  "description": "desafio en curso de backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/F-Scienza/desafio_ejs.git"
+  },
+  "keywords": [
+    "ejs",
+    "javascript",
+    "backend"
+  ],
+  "author": "f-scienza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/F-Scienza/desafio_ejs/issues"
+  },
+  "homepage": "https://github.com/F-Scienza/desafio_ejs#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
