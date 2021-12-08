@@ -60,6 +60,7 @@ app.get("/", (req, res)=> {
 
 // 	publicamos la carpeta upload
 app.use(express.static('uploads'))
+app.use(express.static(__dirname + '/public'))
 
 app.get("/productList", (req, res)=> {
     return res.render('productList.ejs', {
