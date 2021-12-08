@@ -3,7 +3,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: white;
+    height: 100%;
 }
 .container{
     background-color: black;
@@ -32,4 +34,14 @@ form{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+.list{
+    margin-top: 40px;
+    height: auto;
+}
+.prod-table{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
 }
