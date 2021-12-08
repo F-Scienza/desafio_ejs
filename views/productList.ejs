@@ -1,0 +1,26 @@
+<%- include("template/head", {titlePath: "lista de productos"}) %>
+<body>
+    <% if( productos.length == 0 ) {%>
+        <h2>Aun no hay productos 😒 </h2>
+        <a href="/"> Cargar uno </a>
+    <% } else{ %>
+        <table>
+            <tr>
+                <td> Titulo  </td>
+                <td>  Precio </td> 
+                <td>  id     </td>   
+                <td>  imagen </td>                         
+            </tr>
+            <% productos.forEach((producto)=>{ %>
+                <tr>
+                    <td> <%- producto.title %>     </td>
+                    <td> $ <%- producto.price %>   </td>     
+                    <td> <%- producto.id %>        </td>     
+                    <td> <img src="<%- producto.thumbnail %>" width="100px" alt="prod-img"> </td>              
+                </tr>
+            <% }) %>
+        </table>
+        <a href="/">Volver</a>
+    <% } %>  
+</body>
+</html>
